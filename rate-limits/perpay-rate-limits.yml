@@ -1,0 +1,43 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Perpay
+providerId: perpay
+created: '2026-06-13'
+modified: '2026-06-13'
+reconciled: false
+tags:
+  - Fintech
+  - BNPL
+  - Buy Now Pay Later
+  - Credit Building
+  - Payroll Deduction
+  - Payments
+  - Consumer Finance
+  - Rate Limiting
+  - Quotas
+  - Throttling
+description: >-
+  Placeholder rate-limit artifact for Perpay. No public rate-limit
+  documentation has been found; Perpay's APIs are internal and partner-only.
+  Replace with real limits once researched or disclosed by Perpay.
+notes: "Initial scaffold — limits have not yet been reconciled."
+sources:
+  - https://www.perpay.com
+  - https://help.perpay.com/en/
+responseCodes:
+  throttled: 429
+limits:
+  - name: Default
+    scope: account
+    metric: varies
+    limit: see provider documentation
+    notes: Pending reconciliation; no public rate-limit documentation found.
+policies:
+  - name: Backoff Strategy
+    description: >-
+      Clients should implement exponential backoff with jitter and honor
+      any Retry-After header returned on HTTP 429 responses.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

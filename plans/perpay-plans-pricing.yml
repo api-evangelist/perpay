@@ -1,0 +1,51 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Perpay
+providerId: perpay
+created: '2026-06-13'
+modified: '2026-06-13'
+reconciled: false
+tags:
+  - Fintech
+  - BNPL
+  - Buy Now Pay Later
+  - Credit Building
+  - Payroll Deduction
+  - Payments
+  - Consumer Finance
+  - Plans
+description: >-
+  Placeholder plans/pricing artifact for Perpay. Perpay does not publish a
+  public merchant API tier list; pricing is consumer-facing (interest-free
+  installments via payroll deduction) with no publicly documented API
+  access tiers. Replace with real pricing once the provider's plans page is
+  reconciled.
+notes: "Initial scaffold — plans/pricing have not yet been reconciled against the provider's documentation."
+sources:
+  - https://www.perpay.com
+  - https://help.perpay.com/en/
+plans:
+  - id: perpay-consumer-default
+    name: Consumer Marketplace (Interest-Free)
+    type: consumer
+    description: >-
+      Consumers shop on the Perpay Marketplace and repay via payroll
+      deduction installments. Perpay charges no interest and no fees to
+      consumers; revenue comes from merchant and interchange fees.
+    entries:
+      - label: API Access
+        name: api_access
+        type: flat
+        metric: varies
+        limit: -1
+        timeFrame: usage
+        geo: global
+        unit: 1
+        price: see https://www.perpay.com
+        userMultiplied: false
+    elements:
+      - name: Pending Reconciliation
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
