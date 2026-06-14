@@ -1,0 +1,287 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "perpay": "https://perpay.com/schemas/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Consumer": {
+      "@id": "perpay:Consumer",
+      "@context": {
+        "id": {
+          "@id": "perpay:consumerId",
+          "@type": "xsd:string"
+        },
+        "firstName": {
+          "@id": "schema:givenName",
+          "@type": "xsd:string"
+        },
+        "lastName": {
+          "@id": "schema:familyName",
+          "@type": "xsd:string"
+        },
+        "email": {
+          "@id": "schema:email",
+          "@type": "xsd:string"
+        },
+        "employerName": {
+          "@id": "perpay:employerName",
+          "@type": "xsd:string"
+        },
+        "payFrequency": {
+          "@id": "perpay:payFrequency",
+          "@type": "xsd:string"
+        },
+        "spendingLimit": {
+          "@id": "perpay:spendingLimit",
+          "@type": "xsd:decimal"
+        },
+        "creditScore": {
+          "@id": "perpay:creditScore",
+          "@type": "xsd:integer"
+        },
+        "created": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        },
+        "status": {
+          "@id": "perpay:consumerStatus",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "Order": {
+      "@id": "perpay:Order",
+      "@context": {
+        "id": {
+          "@id": "perpay:orderId",
+          "@type": "xsd:string"
+        },
+        "consumer": {
+          "@id": "perpay:consumer",
+          "@type": "xsd:string"
+        },
+        "totalAmount": {
+          "@id": "schema:totalPrice",
+          "@type": "xsd:decimal"
+        },
+        "currency": {
+          "@id": "schema:priceCurrency",
+          "@type": "xsd:string"
+        },
+        "status": {
+          "@id": "perpay:orderStatus",
+          "@type": "xsd:string"
+        },
+        "installmentPlan": {
+          "@id": "perpay:installmentPlan",
+          "@type": "xsd:string"
+        },
+        "payrollDeductionAmount": {
+          "@id": "perpay:payrollDeductionAmount",
+          "@type": "xsd:decimal"
+        },
+        "created": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        },
+        "items": {
+          "@id": "perpay:orderItems",
+          "@container": "@list"
+        }
+      }
+    },
+    "InstallmentPlan": {
+      "@id": "perpay:InstallmentPlan",
+      "@context": {
+        "id": {
+          "@id": "perpay:planId",
+          "@type": "xsd:string"
+        },
+        "order": {
+          "@id": "perpay:order",
+          "@type": "xsd:string"
+        },
+        "consumer": {
+          "@id": "perpay:consumer",
+          "@type": "xsd:string"
+        },
+        "totalAmount": {
+          "@id": "schema:totalPrice",
+          "@type": "xsd:decimal"
+        },
+        "installmentAmount": {
+          "@id": "perpay:installmentAmount",
+          "@type": "xsd:decimal"
+        },
+        "numberOfInstallments": {
+          "@id": "perpay:numberOfInstallments",
+          "@type": "xsd:integer"
+        },
+        "remainingInstallments": {
+          "@id": "perpay:remainingInstallments",
+          "@type": "xsd:integer"
+        },
+        "payFrequency": {
+          "@id": "perpay:payFrequency",
+          "@type": "xsd:string"
+        },
+        "status": {
+          "@id": "perpay:planStatus",
+          "@type": "xsd:string"
+        },
+        "created": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        },
+        "nextPaymentDate": {
+          "@id": "perpay:nextPaymentDate",
+          "@type": "xsd:date"
+        }
+      }
+    },
+    "PayrollDeduction": {
+      "@id": "perpay:PayrollDeduction",
+      "@context": {
+        "id": {
+          "@id": "perpay:deductionId",
+          "@type": "xsd:string"
+        },
+        "consumer": {
+          "@id": "perpay:consumer",
+          "@type": "xsd:string"
+        },
+        "installmentPlan": {
+          "@id": "perpay:installmentPlan",
+          "@type": "xsd:string"
+        },
+        "amount": {
+          "@id": "schema:price",
+          "@type": "xsd:decimal"
+        },
+        "currency": {
+          "@id": "schema:priceCurrency",
+          "@type": "xsd:string"
+        },
+        "payDate": {
+          "@id": "perpay:payDate",
+          "@type": "xsd:date"
+        },
+        "status": {
+          "@id": "perpay:deductionStatus",
+          "@type": "xsd:string"
+        },
+        "employerConfirmed": {
+          "@id": "perpay:employerConfirmed",
+          "@type": "xsd:boolean"
+        }
+      }
+    },
+    "DirectDepositSwitch": {
+      "@id": "perpay:DirectDepositSwitch",
+      "@context": {
+        "id": {
+          "@id": "perpay:switchId",
+          "@type": "xsd:string"
+        },
+        "consumer": {
+          "@id": "perpay:consumer",
+          "@type": "xsd:string"
+        },
+        "employerId": {
+          "@id": "perpay:employerId",
+          "@type": "xsd:string"
+        },
+        "employerName": {
+          "@id": "perpay:employerName",
+          "@type": "xsd:string"
+        },
+        "pinwheelTaskId": {
+          "@id": "perpay:pinwheelTaskId",
+          "@type": "xsd:string"
+        },
+        "status": {
+          "@id": "perpay:switchStatus",
+          "@type": "xsd:string"
+        },
+        "created": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        },
+        "confirmedAt": {
+          "@id": "perpay:confirmedAt",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+    "CreditReport": {
+      "@id": "perpay:CreditReport",
+      "@context": {
+        "id": {
+          "@id": "perpay:reportId",
+          "@type": "xsd:string"
+        },
+        "consumer": {
+          "@id": "perpay:consumer",
+          "@type": "xsd:string"
+        },
+        "bureau": {
+          "@id": "perpay:creditBureau",
+          "@type": "xsd:string"
+        },
+        "reportingPeriod": {
+          "@id": "perpay:reportingPeriod",
+          "@type": "xsd:string"
+        },
+        "onTimePayments": {
+          "@id": "perpay:onTimePayments",
+          "@type": "xsd:integer"
+        },
+        "spendingLimitReported": {
+          "@id": "perpay:spendingLimitReported",
+          "@type": "xsd:decimal"
+        },
+        "submittedAt": {
+          "@id": "schema:datePublished",
+          "@type": "xsd:dateTime"
+        },
+        "status": {
+          "@id": "perpay:reportStatus",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "SpendingLimit": {
+      "@id": "perpay:SpendingLimit",
+      "@context": {
+        "id": {
+          "@id": "perpay:limitId",
+          "@type": "xsd:string"
+        },
+        "consumer": {
+          "@id": "perpay:consumer",
+          "@type": "xsd:string"
+        },
+        "totalLimit": {
+          "@id": "perpay:totalLimit",
+          "@type": "xsd:decimal"
+        },
+        "availableLimit": {
+          "@id": "perpay:availableLimit",
+          "@type": "xsd:decimal"
+        },
+        "usedLimit": {
+          "@id": "perpay:usedLimit",
+          "@type": "xsd:decimal"
+        },
+        "currency": {
+          "@id": "schema:priceCurrency",
+          "@type": "xsd:string"
+        },
+        "lastUpdated": {
+          "@id": "schema:dateModified",
+          "@type": "xsd:dateTime"
+        }
+      }
+    }
+  }
+}

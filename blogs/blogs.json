@@ -1,0 +1,14 @@
+{
+  "repo": "perpay",
+  "feeds": [
+    {
+      "source": "https://blog.perpay.com/",
+      "feed_url": "https://blog.perpay.com/",
+      "title": "Perpay Blog",
+      "saved": 8,
+      "method": "html"
+    }
+  ],
+  "post_count": 8,
+  "fetched": "2026-06-13T00:00:00Z"
+}

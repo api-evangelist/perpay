@@ -98,6 +98,12 @@ common:
     url: rate-limits/perpay-rate-limits.yml
   - type: FinOps
     url: finops/perpay-finops.yml
+  - type: Blog
+    url: https://blog.perpay.com/
+  - type: BlogPosts
+    url: blogs/blogs.json
+  - type: JSONLDContext
+    url: json-ld/perpay-context.jsonld
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
