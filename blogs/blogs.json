@@ -3,12 +3,12 @@
   "feeds": [
     {
       "source": "https://blog.perpay.com/",
-      "feed_url": "https://blog.perpay.com/",
-      "title": "Perpay Blog",
-      "saved": 8,
-      "method": "html"
+      "feed_url": "https://blog.perpay.com/welcome?format=rss",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
     }
   ],
   "post_count": 8,
-  "fetched": "2026-06-13T00:00:00Z"
+  "fetched": "2026-06-14T20:42:17Z"
 }
