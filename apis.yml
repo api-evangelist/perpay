@@ -80,6 +80,10 @@ apis:
       - type: Documentation
         url: https://help.perpay.com/en/articles/450206-how-perpay-works
 common:
+  - type: TrustCenter
+    url: security/perpay-trust-center.yml
+  - type: DomainSecurity
+    url: security/perpay-domain-security.yml
   - type: Website
     url: https://www.perpay.com
   - type: HelpCenter
