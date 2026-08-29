@@ -10,6 +10,17 @@ description: >-
   reporting to Experian, TransUnion, and Equifax. Perpay operates a closed
   marketplace — third-party merchant checkout integration is not publicly available;
   API access is reserved for Perpay's own products and vetted partners.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
