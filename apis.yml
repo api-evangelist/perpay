@@ -36,6 +36,13 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/perpay.png
 tags:
   - Fintech
+  - Buy Now Pay Later
+  - Credit Building
+  - Payroll Deduction
+  - Payments
+  - Consumer Finance
+tags_raw:
+  - Fintech
   - BNPL
   - Buy Now Pay Later
   - Credit Building
@@ -55,6 +62,11 @@ apis:
     humanURL: https://www.perpay.com
     baseURL: https://api.perpay.com
     tags:
+      - Checkout
+      - Marketplace
+      - Installments
+      - Buy Now Pay Later
+    tags_raw:
       - Checkout
       - Marketplace
       - Installments
