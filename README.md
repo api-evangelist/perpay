@@ -1,4 +1,4 @@
-# Perpay (perpay)
+# Perpay
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,75 +66,111 @@
 
 Perpay is a buy-now-pay-later and credit-building platform that lets consumers shop and pay via automatic payroll deductions. Its internal REST platform supports marketplace checkout, installment plan creation, payroll direct-deposit switching (via Pinwheel), identity and income verification, and credit-bureau reporting to Experian, TransUnion, and Equifax. Perpay operates a closed marketplace — third-party merchant checkout integration is not publicly available; API access is reserved for Perpay's own products and vetted partners.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/perpay/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/perpay/refs/heads/main/apis.yml)
+**Areas:** Fintech · Buy Now Pay Later · Credit Building · Payroll Deduction · Payments · Consumer Finance
 
-## Tags
+## Perpay on APIs.io
 
-- Fintech
-- BNPL
-- Buy Now Pay Later
-- Credit Building
-- Payroll Deduction
-- Payments
-- Consumer Finance
+Everything profiled for Perpay is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/perpay/](https://apis.io/providers/perpay/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (3)
 
-- **Created:** 2026-06-13
-- **Modified:** 2026-06-13
+- [Perpay Marketplace Checkout API](https://apis.io/apis/perpay/perpay-marketplace-checkout-api/) — Internal REST API that powers checkout on the Perpay Marketplace. Handles product ordering, spending-limit enforcement, and installment plan creation for…
+- [Perpay Payroll Direct-Deposit API](https://apis.io/apis/perpay/perpay-payroll-direct-deposit-api/) — REST integration layer built on Pinwheel's payroll connectivity API. Supports direct-deposit switching, income and employment verification, and real-time…
+- [Perpay Credit Reporting API](https://apis.io/apis/perpay/perpay-credit-reporting-api/) — Internal API that submits on-time payment history and spending-limit data to Experian, TransUnion, and Equifax for credit-building purposes. Governed by…
 
-## APIs
+### Published properties
 
-### Perpay Marketplace Checkout API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Internal REST API that powers checkout on the Perpay Marketplace. Handles product ordering, spending-limit enforcement, and installment plan creation for approved consumers. Access is limited to Perpay's own platform.
+#### JSON-LD (1)
 
-- **Human URL:** [https://www.perpay.com](https://www.perpay.com)
-- **Base URL:** `https://api.perpay.com`
+Linked-data contexts for the provider's vocabulary.
 
-#### Tags
+- [Perpay Context](https://apis.io/jsonld/perpay/perpay-context/)
 
-- Checkout
-- Marketplace
-- Installments
-- BNPL
+#### Security (2)
 
-### Perpay Payroll Direct-Deposit API
+Authentication, trust centre, and vulnerability disclosure.
 
-REST integration layer built on Pinwheel's payroll connectivity API. Supports direct-deposit switching, income and employment verification, and real-time confirmation of paycheck routing updates for 1.5 M+ employer payroll platforms.
+- [Perpay Domain Security](https://apis.io/security/perpay/perpay-domain-security/)
+- [Perpay Trust Center](https://apis.io/security/perpay/perpay-trust-center/)
 
-- **Human URL:** [https://help.perpay.com/en/articles/11661160-how-perpay-uses-direct-deposit-for-payments](https://help.perpay.com/en/articles/11661160-how-perpay-uses-direct-deposit-for-payments)
-- **Base URL:** `https://api.perpay.com`
+#### Plans and pricing (1)
 
-#### Tags
+Published plans, tiers and prices.
 
-- Payroll
-- Direct Deposit
-- Income Verification
-- Employment Verification
-- Pinwheel
+- [Perpay Plans Pricing](https://apis.io/plans/perpay/perpay-plans-pricing/)
 
-### Perpay Credit Reporting API
+#### Rate limits (1)
 
-Internal API that submits on-time payment history and spending-limit data to Experian, TransUnion, and Equifax for credit-building purposes. Governed by FCRA requirements.
+Published request limits.
 
-- **Human URL:** [https://help.perpay.com/en/articles/450206-how-perpay-works](https://help.perpay.com/en/articles/450206-how-perpay-works)
-- **Base URL:** `https://api.perpay.com`
+- [Perpay Rate Limits](https://apis.io/rate-limits/perpay/perpay-rate-limits/)
 
-#### Tags
+#### FinOps (1)
 
-- Credit Building
-- Credit Bureau
-- Experian
-- TransUnion
-- Equifax
-- FCRA
+What the API costs to run, by operation.
 
-## Common Resources
+- [Perpay Finops](https://apis.io/finops/perpay/perpay-finops/)
 
-- **Website:** [https://www.perpay.com](https://www.perpay.com)
-- **Help Center:** [https://help.perpay.com/en/](https://help.perpay.com/en/)
-- **GitHub:** [https://github.com/Perpay](https://github.com/Perpay)
-- **LinkedIn:** [https://www.linkedin.com/company/perpay](https://www.linkedin.com/company/perpay)
-- **Terms of Service:** [https://perpay.com/legal/terms-and-conditions](https://perpay.com/legal/terms-and-conditions)
-- **Privacy Policy:** [https://perpay.com/legal/privacy-policy](https://perpay.com/legal/privacy-policy)
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.perpay.com)
+- [Blog](https://blog.perpay.com/)
+- [Terms of service](https://perpay.com/legal/terms-and-conditions)
+- [Privacy policy](https://perpay.com/legal/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 20.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 6.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 34.2 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 21.4** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/perpay/](https://apis.io/providers/perpay/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Perpay: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/perpay/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
